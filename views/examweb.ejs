@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề thi thiết kế web - HIT Open Day</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .header {
+        background-color: #f5f6fa;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        background-color: #27ae60;
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+      }
+      .content {
+        max-width: 996px;
+        margin: auto;
+      }
+      .image {
+        width: 60%;
+      }
+      .button {
+        text-decoration: none;
+        padding: 15px 30px;
+        background-color: #27ae60;
+        border-radius: 15px;
+        color: white;
+        margin: auto;
+      }
+      .cau {
+        font-size: 36px;
+      }
+      .snowflake {
+      color: #fff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      font-weight: 800;
+      color: red;
+    }
+    @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+
+    .logo {
+      width: 150px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="/img/HOD.png" alt="">
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake"">A</div>
+      <div class="snowflake"">❆</div>
+      <div class="snowflake"">❅</div>
+      <div class="snowflake"">A</div>
+      <div class="snowflake"">❅</div>
+      <div class="snowflake"">❆</div>
+      <div class="snowflake"">A</div>
+      <div class="snowflake"">❆</div>
+      <div class="snowflake"">❅</div>
+      <div class="snowflake"">A</div>
+      <div class="snowflake"">❅</div>
+      <div class="snowflake"">❆</div>
+    </div>
+    <div class="content">
+      <h1 align="center">Đề thi thiết kế web - HIT OPEN DAY</h1>
+      <p><a class="button" href="/">Nộp bài</a></p>
+
+      <p style="margin-top: 30px;">
+        <p><b class="cau">Đề bài:</b></p>
+        <ul>
+          <li>Yêu cầu thiết kế website bằng HTML/CSS theo mẫu dưới đây.</li>
+          <li><a href="/uploads/deweb" target="_blank">Xem đề.</a></li>
+        </ul>
+      </p>
+
+      <p>
+        <p><b class="cau">Cấu trúc thư mục:</b></p>
+        <li>Tạo các file index.html, style.css, ảnh ngang hàng nhau.</li>
+        <li>Ví dụ: <img src="/img/structurePNG.png" alt=""> </li>
+        <li style="color: red;"><b>CẤM</b> cho bất kỳ files nào vào trong folder. </li>
+        <li style="color: red;"><b>CHÚ Ý</b> đường dẫn tới file ảnh hoặc css: &lt;img src="<span style="color: blue;">./logo.png</span>"&gt; hoặc &lt;img src="<span style="color: blue;">logo.png</span>"&gt;	 </li>
+        <li style="color: red;"> <b>CẤM</b>	&lt;img src="<span style="color: blue;">/logo.png</span>"&gt;</li>
+      </p>
+
+      <p>
+        <p><b class="cau">Yêu cầu:</b></p>
+        <ul>
+          <li>Thí sinh không được phép sử dụng thư viện HTML/CSS/JS hay bất kỳ thư viện bên thứ 3 nào khác ngoại trừ thư viện chèn icon.</li>
+          <li>Không được chép bài.</li>
+          <li>Không được xem source trong quá trình làm bài.</li>
+          <li>Không được phép tra mạng về cách sử dụng HTML/CSS.</li>
+          <li>Được phép sử dụng scss.</li>
+
+        </ul>
+      </p>
+
+      <p>
+        <p><b class="cau">Tài liệu:</b></p>
+        <ul>
+          <li>Link ảnh: <a href="/files/tailieuanh.zip">Tại đây</a></li>
+          <li>Link fontawesome: <a href="/files/fontawesome.zip">Tại đây</a></li>
+          <li>Các icon cần thiết: class="fab fa-facebook", class="fas fa-map-marker-alt", class="fas fa-users", class="fas fa-heart"</li>
+        </ul>
+      </p>
+      <p>
+        <p><b class="cau">Hướng dẫn nộp bài:</b></p>
+        <ul>
+          <li><b>Bước 1:</b> Ấn vào nút nộp bài bên trên kia kìa.</li>
+          <li><b>Bước 2:</b> Tải toàn bộ tất cả các file html,css, ảnh lên. <span style="color: red;">Không cần tải folder fontawesome lên hệ thống.</span></li>
+          <li><b>Bước 3:</b> Tắt máy, uống cà phê :))</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="footer">HITCLUB 2020</div>
+  </body>
+</html>
